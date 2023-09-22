@@ -133,7 +133,9 @@ body {
 }
 
 .header-contacts-link {
-  display: block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
   padding: 32px 0;
   color: var(--main-color-text);
   font-family: Roboto;
@@ -142,15 +144,30 @@ body {
   letter-spacing: 0.28px;
 }
 
+.mail-icon,
+.phone-icon {
+  fill: currentColor;
+}
+
 .header-contacts-link:hover,
 .header-contacts-link:focus {
   color: var(--accent-color);
+  fill: currentColor;
 }
 
 /* --------HERO----------- */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-bg.jpg");
   background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   padding: 200px 0px;
 }
