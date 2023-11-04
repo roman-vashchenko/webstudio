@@ -1,0 +1,36 @@
+.feature-list {
+  display: flex;
+  gap: 30px;
+}
+
+.feature-item {
+  width: calc(100% - 90px) / 4;
+}
+
+.feature-icon {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background: #f5f4fa;
+}
+
+.feature-title {
+  color: $title-color-text;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  width: 270px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
