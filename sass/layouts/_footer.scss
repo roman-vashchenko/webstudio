@@ -5,8 +5,16 @@
 
 .footer-wrap {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  // align-items: baseline;
+  // justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer-address {
+  text-align: center;
 }
 
 .footer-logo {
@@ -14,7 +22,7 @@
   margin-bottom: 20px;
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
@@ -55,6 +63,7 @@
 }
 
 .footer-links-text {
+  text-align: center;
   margin-bottom: 20px;
   color: #fff;
   font-size: 14px;
@@ -96,9 +105,14 @@
   }
 }
 
+.subscription {
+  width: 100%;
+}
+
 .subscription-text {
   margin-bottom: 20px;
   color: #fff;
+  text-align: center;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -107,8 +121,10 @@
 
 .subscription-field {
   padding: 15px 16px;
-  margin-right: 12px;
-  width: 358px;
+  // margin-right: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  // width: 358px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -127,11 +143,12 @@
 }
 
 .subscription-btn {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   min-width: 200px;
+  margin: 0 auto;
   border-radius: 4px;
   background: $accent-color;
   padding: 10px 28px;

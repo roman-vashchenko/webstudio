@@ -2,24 +2,26 @@
   border-bottom: 1px solid #ececec;
 }
 .header-content {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .header-navigation {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-logo {
-  display: block;
-  padding: 25px 0;
-  margin-right: 94px;
+  display: inline-block;
+  padding: 16px 0;
+  // margin-right: 94px;
 
   color: #000;
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.72px;
 }
 .header-logo > span {
   color: $accent-color;
@@ -29,8 +31,16 @@
   letter-spacing: 0.78px;
 }
 
-.header-list {
+.btn-open-menu {
   display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header-list {
+  display: none;
   align-items: center;
   gap: 50px;
 }
@@ -70,7 +80,7 @@
 }
 
 .header-contacts-list {
-  display: flex;
+  display: none;
   margin-left: auto;
   gap: 50px;
 }
