@@ -1,10 +1,10 @@
 .hero {
+  background-color: #2f303a;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero-bg-mob.jpg");
-  background-color: #2f303a;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 118px 60px;
@@ -18,6 +18,24 @@
       url("../images/hero-bg-mob-2x.jpg");
   }
   // padding: 200px 0px;
+  @media screen and (min-width: 767px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bg-tab.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-bg-tab-2x.jpg");
+    }
+  }
 }
 
 .hero-title {
