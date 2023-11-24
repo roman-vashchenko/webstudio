@@ -3,18 +3,37 @@
   padding: 60px 0;
 }
 
+.footer-container {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 590px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .footer-wrap {
   display: flex;
-  // align-items: baseline;
-  // justify-content: space-between;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 60px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .footer-address {
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-logo {
@@ -70,6 +89,9 @@
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-soc-list {
@@ -105,8 +127,23 @@
   }
 }
 
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 12px;
+  }
+}
+
 .subscription {
   width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
+    margin: 0;
+  }
 }
 
 .subscription-text {
@@ -117,19 +154,27 @@
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscription-field {
   padding: 15px 16px;
-  // margin-right: 12px;
   margin-bottom: 20px;
   width: 100%;
-  // width: 358px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2f303a;
   color: #fff;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .subscription-field {
@@ -160,6 +205,9 @@
   letter-spacing: 0.96px;
   cursor: pointer;
   transition: box-shadow $timer-function;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
 }
 
 .subscription-btn {
